@@ -1,0 +1,15 @@
+==========================================================================
+🐾 DIRETÓRIO DE IMAGENS - COMO ADICIONAR SUAS FOTOS DA ONG
+==========================================================================
+
+Para que o seu site exiba as fotos reais da sua ONG, basta colocar as suas imagens dentro desta pasta "img" com os seguintes nomes de arquivo:
+
+1. Foto do Banner Principal (Home):
+   -> Nome do arquivo: banner-dog.jpg
+   -> Tamanho recomendado: 800x600 pixels ou proporção 4:3
+
+2. Foto da Seção Quem Somos (Home):
+   -> Nome do arquivo: about-dog.jpg
+   -> Tamanho recomendado: 600x600 pixels (quadrada) ou proporção 1:1
+
+Assim que você salvar os seus arquivos de imagem aqui com estes nomes exatos, o navegador carregará as suas fotos automaticamente!

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   DESIGN SYSTEM - VARIÁVEIS DO PROJETO (ONG DE ADOÇÃO)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root {
+    /* --- Tipografia --- */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Quicksand', sans-serif;
+
+    /* --- Paleta de Cores Acolhedora (Tema Claro) --- */
+    --primary: hsl(24, 90%, 58%);         /* Terracota/Laranja amigável (Alegria, energia pet) */
+    --primary-hover: hsl(24, 90%, 48%);
+    --primary-light: hsl(24, 100%, 95%);
+    --secondary: hsl(150, 45%, 38%);       /* Verde Menta/Folha (Natureza, saúde, esperança) */
+    --secondary-hover: hsl(150, 45%, 30%);
+    --secondary-light: hsl(150, 60%, 96%);
+
+    --accent: hsl(45, 95%, 60%);          /* Amarelo Quente (Acolhimento, calor humano) */
+    --text-main: hsl(24, 20%, 15%);       /* Chocolate escuro suave em vez de preto puro */
+    --text-muted: hsl(24, 10%, 45%);
+    --bg-main: hsl(30, 50%, 98%);         /* Off-white quente super suave e acolhedor */
+    --bg-card: hsl(0, 0%, 100%);
+    --border-color: hsl(24, 15%, 90%);
+    
+    /* --- Estados --- */
+    --success: hsl(140, 50%, 45%);
+    --error: hsl(0, 75%, 60%);
+    --warning: hsl(35, 90%, 55%);
+
+    /* --- Elevação e Sombras --- */
+    --shadow-sm: 0 2px 8px rgba(120, 60, 20, 0.04);
+    --shadow-md: 0 8px 24px rgba(120, 60, 20, 0.08);
+    --shadow-lg: 0 16px 40px rgba(120, 60, 20, 0.12);
+    
+    /* --- Layout e Transições --- */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 9999px;
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --max-width: 1200px;
+}
