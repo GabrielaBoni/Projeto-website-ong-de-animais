@@ -232,7 +232,7 @@ function initDetailPage() {
     }
 
     const pet = PETS_DATA[slug];
-    const contactUrl = 'contato.html?adotar=' + slug + '&nome=' + encodeURIComponent(pet.nome);
+    const contactUrl = 'adotar.html?pet=' + slug;
 
     // Título da aba e meta description
     document.title = pet.nome + ' | Patinhas Unidas';

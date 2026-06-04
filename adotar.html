@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preencha o formulário de adoção responsável da Patinhas Unidas e dê um lar amoroso a um animal resgatado.">
+    <title>Formulário de Adoção | Patinhas Unidas</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         CABEÇALHO GLOBAL (HEADER)
+         ========================================== -->
+    <header class="site-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-area" aria-label="Voltar para a página inicial">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 14c-1.66 0-3-1.34-3-3 0-2 3-6 3-6s3 4 3 6c0 1.66-1.34 3-3 3zm-4.5-3c-1.38 0-2.5-1.12-2.5-2.5 0-1.67 2.5-5 2.5-5s2.5 3.33 2.5 5c0 1.38-1.12 2.5-2.5 2.5zm9 0c-1.38 0-2.5-1.12-2.5-2.5 0-1.67 2.5-5 2.5-5s2.5 3.33 2.5 5c0 1.38-1.12 2.5-2.5 2.5zM4 16.5c0-1.38 1.12-2.5 2.5-2.5.83 0 1.5.67 1.5 1.5 0 1.38-2.5 4.5-2.5 4.5s-1.5-2.12-1.5-3.5zm16 0c0 1.38-1.12 2.5-2.5 2.5-.83 0-1.5-.67-1.5-1.5 0-1.38 2.5-4.5 2.5-4.5s1.5 2.12 1.5 3.5z"/>
+                </svg>
+                <span>Patinhas Unidas</span>
+            </a>
+
+            <nav aria-label="Menu principal">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="animais.html" class="nav-link">Quero Adotar</a></li>
+                    <li><a href="voluntariado.html" class="nav-link">Voluntariado</a></li>
+                    <li><a href="doacoes.html" class="nav-link">Doações</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="doacoes.html" class="btn btn-secondary btn-header-cta" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">Como Ajudar</a>
+                <button class="hamburger" id="hamburger-menu" aria-label="Abrir menu de navegação" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         HERO DA PÁGINA DE ADOÇÃO
+         ========================================== -->
+    <section class="adoption-page-hero">
+        <div class="container adoption-hero-container">
+            <div class="adoption-hero-content">
+                <span class="section-tag">Adoção Responsável</span>
+                <h1 class="adoption-hero-title">Formulário de <span>Adoção</span></h1>
+                <p class="adoption-hero-desc">Levamos a segurança dos nossos animais a sério. Preencha com atenção e carinho — cada resposta nos ajuda a garantir o melhor lar para cada pet.</p>
+            </div>
+            <div class="adoption-hero-note">
+                <div class="hero-note-icon">🐾</div>
+                <p>Após o envio, nossa equipe entrará em contato em até <strong>2 dias úteis</strong> para agendar uma visita ao abrigo e finalizar o processo de adoção.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         BREADCRUMB
+         ========================================== -->
+    <nav class="breadcrumb-section" aria-label="Navegação estrutural">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">›</span>
+                <a href="animais.html">Quero Adotar</a>
+                <span class="breadcrumb-sep">›</span>
+                <span class="breadcrumb-current">Formulário de Adoção</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         SEÇÃO DO FORMULÁRIO
+         ========================================== -->
+    <section class="adoption-form-section">
+        <div class="container">
+            <div class="adoption-form-container">
+
+                <!-- Indicador de Progresso (Steps) -->
+                <div class="form-steps-wrapper" aria-label="Progresso do formulário">
+                    <div class="form-progress-track"
+                         role="progressbar"
+                         aria-valuenow="25"
+                         aria-valuemin="0"
+                         aria-valuemax="100"
+                         aria-label="Progresso do formulário">
+                        <div class="form-progress-fill" id="form-progress-fill" style="width: 25%;"></div>
+                    </div>
+                    <div class="form-steps-nav">
+
+                        <div class="step-item active" data-step="1">
+                            <div class="step-circle">
+                                <span class="step-num">1</span>
+                                <svg class="step-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                            </div>
+                            <span class="step-name">Sobre Você</span>
+                        </div>
+
+                        <div class="step-connector" aria-hidden="true"></div>
+
+                        <div class="step-item" data-step="2">
+                            <div class="step-circle">
+                                <span class="step-num">2</span>
+                                <svg class="step-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                            </div>
+                            <span class="step-name">Sua Moradia</span>
+                        </div>
+
+                        <div class="step-connector" aria-hidden="true"></div>
+
+                        <div class="step-item" data-step="3">
+                            <div class="step-circle">
+                                <span class="step-num">3</span>
+                                <svg class="step-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                            </div>
+                            <span class="step-name">Pet de Interesse</span>
+                        </div>
+
+                        <div class="step-connector" aria-hidden="true"></div>
+
+                        <div class="step-item" data-step="4">
+                            <div class="step-circle">
+                                <span class="step-num">4</span>
+                                <svg class="step-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                            </div>
+                            <span class="step-name">Envio</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card do Formulário -->
+                <div class="form-card">
+                    <form id="adoption-form" novalidate>
+
+                        <!-- ===== ETAPA 1: Sobre Você ===== -->
+                        <div class="form-step active" id="step-1">
+                            <div class="form-step-header">
+                                <h2 class="form-step-title">Sobre Você</h2>
+                                <p class="form-step-desc">Precisamos conhecer quem irá adotar nosso amiguinho. Todos os dados são tratados com sigilo.</p>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="nome-adotante">
+                                        Nome completo <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="nome-adotante"
+                                        name="nome-adotante"
+                                        class="form-control"
+                                        placeholder="Seu nome completo"
+                                        autocomplete="name"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="erro-nome-adotante"
+                                    >
+                                    <span class="field-error" id="erro-nome-adotante" role="alert"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="email-adotante">
+                                        E-mail <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <input
+                                        type="email"
+                                        id="email-adotante"
+                                        name="email-adotante"
+                                        class="form-control"
+                                        placeholder="seu@email.com"
+                                        autocomplete="email"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="erro-email-adotante"
+                                    >
+                                    <span class="field-error" id="erro-email-adotante" role="alert"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="telefone-adotante">
+                                        Telefone / WhatsApp <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <input
+                                        type="tel"
+                                        id="telefone-adotante"
+                                        name="telefone-adotante"
+                                        class="form-control"
+                                        placeholder="(11) 98888-7777"
+                                        autocomplete="tel"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="erro-telefone-adotante"
+                                        maxlength="15"
+                                    >
+                                    <span class="field-error" id="erro-telefone-adotante" role="alert"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="idade-adotante">
+                                        Sua idade <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <input
+                                        type="number"
+                                        id="idade-adotante"
+                                        name="idade-adotante"
+                                        class="form-control"
+                                        placeholder="Ex: 28"
+                                        min="18"
+                                        max="99"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="erro-idade-adotante"
+                                    >
+                                    <span class="field-error" id="erro-idade-adotante" role="alert"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row form-row-single">
+                                <div class="form-group">
+                                    <label class="form-label" for="cidade-adotante">
+                                        Cidade / Estado <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="cidade-adotante"
+                                        name="cidade-adotante"
+                                        class="form-control"
+                                        placeholder="Ex: São Paulo, SP"
+                                        autocomplete="address-level2"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="erro-cidade-adotante"
+                                    >
+                                    <span class="field-error" id="erro-cidade-adotante" role="alert"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ===== ETAPA 2: Sua Moradia ===== -->
+                        <div class="form-step" id="step-2">
+                            <div class="form-step-header">
+                                <h2 class="form-step-title">Sua Moradia</h2>
+                                <p class="form-step-desc">Entender o ambiente garante que o pet estará seguro e confortável no novo lar.</p>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="tipo-moradia">
+                                        Tipo de moradia <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <select
+                                        id="tipo-moradia"
+                                        name="tipo-moradia"
+                                        class="form-control"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="erro-tipo-moradia"
+                                    >
+                                        <option value="" disabled selected>Selecione uma opção...</option>
+                                        <option value="casa-quintal">Casa com quintal</option>
+                                        <option value="casa-sem-quintal">Casa sem quintal</option>
+                                        <option value="apartamento">Apartamento</option>
+                                        <option value="sitio-chacara">Sítio / Chácara</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                    <span class="field-error" id="erro-tipo-moradia" role="alert"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        A moradia é <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <div class="radio-group" role="radiogroup" aria-describedby="erro-moradia-propria">
+                                        <label class="radio-label">
+                                            <input type="radio" name="moradia-propria" value="propria">
+                                            <span class="radio-custom" aria-hidden="true"></span>
+                                            Própria
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="moradia-propria" value="alugada">
+                                            <span class="radio-custom" aria-hidden="true"></span>
+                                            Alugada
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="moradia-propria" value="cedida">
+                                            <span class="radio-custom" aria-hidden="true"></span>
+                                            Cedida / Emprestada
+                                        </label>
+                                    </div>
+                                    <span class="field-error" id="erro-moradia-propria" role="alert"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">
+                                    Já possui outros animais em casa? <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <div class="radio-group radio-group-inline" role="radiogroup" aria-describedby="erro-outros-animais">
+                                    <label class="radio-label">
+                                        <input type="radio" name="outros-animais" value="sim" id="outros-sim">
+                                        <span class="radio-custom" aria-hidden="true"></span>
+                                        Sim
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="outros-animais" value="nao" id="outros-nao">
+                                        <span class="radio-custom" aria-hidden="true"></span>
+                                        Não
+                                    </label>
+                                </div>
+                                <span class="field-error" id="erro-outros-animais" role="alert"></span>
+                            </div>
+
+                            <!-- Campo condicional: quais animais -->
+                            <div class="conditional-block" id="campo-outros-animais">
+                                <div class="form-group">
+                                    <label class="form-label" for="desc-outros-animais">
+                                        Quais animais você já possui? <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <textarea
+                                        id="desc-outros-animais"
+                                        name="desc-outros-animais"
+                                        class="form-control form-textarea"
+                                        placeholder="Ex: 1 cachorro Labrador de porte médio, castrado. 1 gato SRD adulto, castrado..."
+                                        rows="3"
+                                        aria-describedby="hint-outros-animais erro-desc-outros-animais"
+                                    ></textarea>
+                                    <span class="field-hint" id="hint-outros-animais">Informar raça, porte e se são castrados nos ajuda a avaliar a compatibilidade com o pet adotado.</span>
+                                    <span class="field-error" id="erro-desc-outros-animais" role="alert"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ===== ETAPA 3: Pet de Interesse ===== -->
+                        <div class="form-step" id="step-3">
+                            <div class="form-step-header">
+                                <h2 class="form-step-title">Pet de Interesse</h2>
+                                <p class="form-step-desc">Qual dos nossos amiguinhos tocou o seu coração? Se ainda não decidiu, tudo bem!</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="pet-interesse">
+                                    Animal de interesse <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <select
+                                    id="pet-interesse"
+                                    name="pet-interesse"
+                                    class="form-control"
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="erro-pet-interesse"
+                                >
+                                    <option value="" disabled selected>Selecione o pet...</option>
+                                    <option value="sem-preferencia" data-species="qualquer">Sem preferência — quero conhecer todos</option>
+                                    <option value="julie" data-species="cachorro">Julie — Cachorro Beagle, Jovem (2 anos), Fêmea</option>
+                                    <option value="apollo" data-species="gato">Apollo — Gato SRD, Adulto (5 anos), Macho</option>
+                                    <option value="orion" data-species="gato">Orion — Gato SRD, Adulto (5 anos), Macho</option>
+                                    <option value="loki" data-species="gato">Loki — Gato SRD, Jovem (1 ano), Macho</option>
+                                </select>
+                                <span class="field-error" id="erro-pet-interesse" role="alert"></span>
+                            </div>
+
+                            <!-- Campos condicionais: Felinos -->
+                            <div class="conditional-block feline-fields" id="feline-fields">
+
+                                <div class="feline-alert" role="note">
+                                    <span class="feline-alert-icon" aria-hidden="true">🐈</span>
+                                    <div>
+                                        <strong>Atenção: Segurança para Felinos</strong>
+                                        <p>Gatos são animais extremamente curiosos e ágeis. Para garantir a integridade e segurança do pet, precisamos confirmar algumas informações importantes sobre o seu lar antes de prosseguir.</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        As janelas e aberturas da sua casa têm tela de proteção milimétricas? <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <div class="radio-group" role="radiogroup" aria-describedby="erro-janelas-teladas">
+                                        <label class="radio-label">
+                                            <input type="radio" name="janelas-teladas" value="sim" id="janelas-sim">
+                                            <span class="radio-custom" aria-hidden="true"></span>
+                                            Sim, já tenho telas de proteção instaladas em todas as aberturas
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="janelas-teladas" value="providenciar" id="janelas-providenciar">
+                                            <span class="radio-custom" aria-hidden="true"></span>
+                                            Ainda não tenho, mas vou providenciar antes de receber o pet
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="janelas-teladas" value="nao" id="janelas-nao">
+                                            <span class="radio-custom" aria-hidden="true"></span>
+                                            Não tenho e não planejo instalar
+                                        </label>
+                                    </div>
+                                    <span class="field-error" id="erro-janelas-teladas" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="rotas-fuga">
+                                        Descreva como irá prevenir rotas de fuga <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <textarea
+                                        id="rotas-fuga"
+                                        name="rotas-fuga"
+                                        class="form-control form-textarea"
+                                        placeholder="Descreva as medidas de segurança: telas milimétricas, redes de proteção, portas duplas, cômodos vetados ao pet, etc."
+                                        rows="4"
+                                        aria-describedby="hint-rotas-fuga erro-rotas-fuga"
+                                    ></textarea>
+                                    <span class="field-hint" id="hint-rotas-fuga">Seja específico. Ex: "Instalei rede de proteção em todos os cômodos. A área de serviço tem porta dupla e o terraço será fechado com tela antes da chegada do gato."</span>
+                                    <span class="field-error" id="erro-rotas-fuga" role="alert"></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ===== ETAPA 4: Comprometimento e Envio ===== -->
+                        <div class="form-step" id="step-4">
+                            <div class="form-step-header">
+                                <h2 class="form-step-title">Comprometimento</h2>
+                                <p class="form-step-desc">Última etapa! Queremos entender sua motivação e confirmar seu compromisso com o bem-estar do pet.</p>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="horas-sozinho">
+                                        Horas por dia que o animal ficará sozinho <span class="required-mark" aria-hidden="true">*</span>
+                                    </label>
+                                    <select
+                                        id="horas-sozinho"
+                                        name="horas-sozinho"
+                                        class="form-control"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="erro-horas-sozinho"
+                                    >
+                                        <option value="" disabled selected>Selecione...</option>
+                                        <option value="menos-4h">Menos de 4 horas por dia</option>
+                                        <option value="4-8h">Entre 4 e 8 horas por dia</option>
+                                        <option value="mais-8h">Mais de 8 horas por dia</option>
+                                    </select>
+                                    <span class="field-error" id="erro-horas-sozinho" role="alert"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Já teve animais de estimação antes?</label>
+                                    <div class="radio-group radio-group-inline" role="radiogroup">
+                                        <label class="radio-label">
+                                            <input type="radio" name="teve-animais" value="sim">
+                                            <span class="radio-custom" aria-hidden="true"></span>
+                                            Sim
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="teve-animais" value="nao">
+                                            <span class="radio-custom" aria-hidden="true"></span>
+                                            Não
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="motivo-adocao">
+                                    Por que você quer adotar? <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <textarea
+                                    id="motivo-adocao"
+                                    name="motivo-adocao"
+                                    class="form-control form-textarea"
+                                    placeholder="Conte-nos sua história e motivação para adotar. Quanto mais detalhes, melhor para nós avaliarmos o processo!"
+                                    rows="5"
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="motivo-counter erro-motivo-adocao"
+                                ></textarea>
+                                <div class="textarea-counter" id="motivo-counter" aria-live="polite">
+                                    <span id="motivo-count">0</span> / mínimo 30 caracteres
+                                </div>
+                                <span class="field-error" id="erro-motivo-adocao" role="alert"></span>
+                            </div>
+
+                            <div class="form-terms">
+                                <h3 class="terms-title">Termos de Adoção Responsável</h3>
+
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input
+                                            type="checkbox"
+                                            id="termo-responsabilidade"
+                                            name="termo-responsabilidade"
+                                            required
+                                            aria-required="true"
+                                            aria-describedby="erro-termo-responsabilidade"
+                                        >
+                                        <span class="checkbox-custom" aria-hidden="true"></span>
+                                        <span>Aceito os <strong>Termos de Adoção Responsável</strong> da Patinhas Unidas, comprometendo-me a oferecer abrigo seguro, alimentação adequada, cuidados veterinários e carinho ao animal.</span>
+                                    </label>
+                                    <span class="field-error" id="erro-termo-responsabilidade" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input
+                                            type="checkbox"
+                                            id="termo-leitura"
+                                            name="termo-leitura"
+                                            required
+                                            aria-required="true"
+                                            aria-describedby="erro-termo-leitura"
+                                        >
+                                        <span class="checkbox-custom" aria-hidden="true"></span>
+                                        <span>Confirmo que compreendo que a adoção é um compromisso <strong>vitalício</strong> e que, em caso de impossibilidade, a devolução deve ser comunicada à ONG para garantir a recolocação segura do animal.</span>
+                                    </label>
+                                    <span class="field-error" id="erro-termo-leitura" role="alert"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navegação entre etapas -->
+                        <div class="form-nav">
+                            <button type="button" class="btn btn-outline form-btn-back" id="form-btn-prev" style="display:none;" aria-label="Voltar para a etapa anterior">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                                </svg>
+                                Anterior
+                            </button>
+
+                            <div class="form-step-indicator" aria-live="polite">
+                                Etapa <span id="current-step-num">1</span> de 4
+                            </div>
+
+                            <button type="button" class="btn btn-primary" id="form-btn-next" aria-label="Avançar para a próxima etapa">
+                                Próxima etapa
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/>
+                                </svg>
+                            </button>
+
+                            <button type="submit" class="btn btn-primary" id="form-btn-submit" style="display:none;" aria-label="Enviar solicitação de adoção">
+                                Enviar Solicitação
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+                <!-- /.form-card -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         MODAL DE SUCESSO (animado)
+         ========================================== -->
+    <div class="success-overlay"
+         id="success-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="success-title"
+         aria-describedby="success-desc"
+         style="display:none;">
+        <div class="success-card">
+            <div class="success-icon-wrapper" aria-hidden="true">
+                <svg class="success-checkmark" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            <h2 id="success-title" class="success-title">Solicitação Enviada!</h2>
+            <p id="success-desc" class="success-desc">
+                Obrigada por querer adotar! Nossa equipe analisará sua solicitação e entrará em contato em até <strong>2 dias úteis</strong> para agendar uma visita ao abrigo e dar continuidade ao processo.
+            </p>
+            <div class="success-paw" aria-hidden="true">🐾</div>
+            <div class="success-actions">
+                <a href="animais.html" class="btn btn-primary">Ver outros animais</a>
+                <a href="index.html" class="btn btn-outline">Voltar ao início</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         RODAPÉ GLOBAL (FOOTER)
+         ========================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14c-1.66 0-3-1.34-3-3 0-2 3-6 3-6s3 4 3 6c0 1.66-1.34 3-3 3zm-4.5-3c-1.38 0-2.5-1.12-2.5-2.5 0-1.67 2.5-5 2.5-5s2.5 3.33 2.5 5c0 1.38-1.12 2.5-2.5 2.5zm9 0c-1.38 0-2.5-1.12-2.5-2.5 0-1.67 2.5-5 2.5-5s2.5 3.33 2.5 5c0 1.38-1.12 2.5-2.5 2.5zM4 16.5c0-1.38 1.12-2.5 2.5-2.5.83 0 1.5.67 1.5 1.5 0 1.38-2.5 4.5-2.5 4.5s-1.5-2.12-1.5-3.5zm16 0c0 1.38-1.12 2.5-2.5 2.5-.83 0-1.5-.67-1.5-1.5 0-1.38 2.5-4.5 2.5-4.5s1.5 2.12 1.5 3.5z"/>
+                        </svg>
+                        <span>Patinhas Unidas</span>
+                    </div>
+                    <p class="footer-tagline">Conectando olhares cheios de esperança a famílias cheias de carinho.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">ONG</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#sobre">Quem Somos</a></li>
+                        <li><a href="animais.html">Quero Adotar</a></li>
+                        <li><a href="voluntariado.html">Como Ajudar</a></li>
+                        <li><a href="contato.html">Localização</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Apoie</h4>
+                    <ul class="footer-links">
+                        <li><a href="doacoes.html">Doar Financeiro</a></li>
+                        <li><a href="doacoes.html">Doar Suprimentos</a></li>
+                        <li><a href="voluntariado.html">Seja Voluntário</a></li>
+                        <li><a href="contato.html">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Fale Conosco</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item"><span>📞</span> +55 (11) 98888-7777</div>
+                        <div class="footer-contact-item"><span>✉️</span> contato@patinhasunidas.org.br</div>
+                        <div class="footer-contact-item"><span>📍</span> São Paulo, SP, Brasil</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Patinhas Unidas. Todos os direitos reservados. Projeto Acadêmico.</p>
+                <p>Desenvolvido com ❤️ e responsabilidade.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
