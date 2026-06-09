@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seja voluntário da Patinhas Unidas! Doe de 1h a 1h30 por semana e ajude com limpeza, água, medicamentos e muito carinho aos nossos animais resgatados.">
+    <title>Voluntariado | Patinhas Unidas</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO GLOBAL -->
+    <header class="site-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-area" aria-label="Voltar para a página inicial">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 14c-1.66 0-3-1.34-3-3 0-2 3-6 3-6s3 4 3 6c0 1.66-1.34 3-3 3zm-4.5-3c-1.38 0-2.5-1.12-2.5-2.5 0-1.67 2.5-5 2.5-5s2.5 3.33 2.5 5c0 1.38-1.12 2.5-2.5 2.5zm9 0c-1.38 0-2.5-1.12-2.5-2.5 0-1.67 2.5-5 2.5-5s2.5 3.33 2.5 5c0 1.38-1.12 2.5-2.5 2.5zM4 16.5c0-1.38 1.12-2.5 2.5-2.5.83 0 1.5.67 1.5 1.5 0 1.38-2.5 4.5-2.5 4.5s-1.5-2.12-1.5-3.5zm16 0c0 1.38-1.12 2.5-2.5 2.5-.83 0-1.5-.67-1.5-1.5 0-1.38 2.5-4.5 2.5-4.5s1.5 2.12 1.5 3.5z"/>
+                </svg>
+                <span>Patinhas Unidas</span>
+            </a>
+
+            <nav aria-label="Menu principal">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="animais.html" class="nav-link">Quero Adotar</a></li>
+                    <li><a href="voluntariado.html" class="nav-link">Voluntariado</a></li>
+                    <li><a href="doacoes.html" class="nav-link">Doações</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="doacoes.html" class="btn btn-secondary btn-header-cta" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">Como Ajudar</a>
+                <button class="hamburger" id="hamburger-menu" aria-label="Abrir menu de navegação" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="volunteer-hero">
+        <div class="container volunteer-hero-container">
+            <div class="volunteer-hero-content">
+                <span class="section-tag">Voluntariado</span>
+                <h1 class="volunteer-hero-title">Doe seu tempo,<br><span>transforme vidas</span></h1>
+                <p class="volunteer-hero-desc">Você não precisa de superpoderes para ser um herói. Basta dedicar de <strong>1h a 1h30 por semana</strong> ao nosso abrigo — e cada minuto seu significa o mundo para esses animais que só precisam de uma chance.</p>
+                <div class="hero-buttons" style="margin-top: 0.5rem;">
+                    <a href="#formulario-voluntario" class="btn btn-secondary">Quero Me Inscrever</a>
+                    <a href="#atividades" class="btn btn-outline" style="border-color: var(--secondary); color: var(--secondary);">Ver Atividades</a>
+                </div>
+            </div>
+
+            <div class="volunteer-hero-badges">
+                <div class="vol-badge-item">
+                    <span class="vol-badge-icon">⏰</span>
+                    <div class="vol-badge-text">
+                        <span class="vol-badge-value">1h – 1h30</span>
+                        <span class="vol-badge-label">por semana, no seu ritmo</span>
+                    </div>
+                </div>
+                <div class="vol-badge-item">
+                    <span class="vol-badge-icon">🤝</span>
+                    <div class="vol-badge-text">
+                        <span class="vol-badge-value">100%</span>
+                        <span class="vol-badge-label">voluntário e gratuito</span>
+                    </div>
+                </div>
+                <div class="vol-badge-item">
+                    <span class="vol-badge-icon">🐾</span>
+                    <div class="vol-badge-text">
+                        <span class="vol-badge-value">4</span>
+                        <span class="vol-badge-label">atividades de impacto real</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb-section" aria-label="Navegação estrutural">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">›</span>
+                <span class="breadcrumb-current">Voluntariado</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ATIVIDADES -->
+    <section class="activities-section" id="atividades">
+        <div class="container">
+            <div class="section-header-centered">
+                <span class="section-tag">O que você vai fazer</span>
+                <h2 class="section-title">Quatro formas de fazer a diferença</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.75;">Cada visita ao abrigo é uma combinação de atividades práticas e muita afetividade. Você escolhe o que quiser fazer — sempre com orientação da nossa equipe.</p>
+            </div>
+
+            <div class="activities-grid">
+
+                <!-- Limpeza -->
+                <div class="activity-card">
+                    <div class="activity-icon activity-icon-clean">🧹</div>
+                    <h3>Limpeza do Abrigo</h3>
+                    <p>Manter o espaço limpo é fundamental para a saúde e o bem-estar dos animais. Você vai ajudar na higienização dos canis, baias e áreas comuns, garantindo um ambiente seguro e acolhedor para todos os pets.</p>
+                    <span class="activity-tag">Fundamental</span>
+                </div>
+
+                <!-- Água -->
+                <div class="activity-card">
+                    <div class="activity-icon activity-icon-water">💧</div>
+                    <h3>Água & Alimentação</h3>
+                    <p>Nenhum animal pode ficar sem água fresca ou sem sua porção diária de ração. Os voluntários são essenciais para garantir que cada cão e gato receba sua alimentação no momento certo, com cuidado e atenção.</p>
+                    <span class="activity-tag">Diário</span>
+                </div>
+
+                <!-- Medicamentos -->
+                <div class="activity-card">
+                    <div class="activity-icon activity-icon-meds">💊</div>
+                    <h3>Apoio com Medicamentos</h3>
+                    <p>Muitos dos nossos animais estão em processo de recuperação e precisam tomar remédios com regularidade. Com treinamento da nossa equipe veterinária, você pode apoiar essa rotina vital para a saúde deles.</p>
+                    <span class="activity-tag">Com suporte</span>
+                </div>
+
+                <!-- Amor -->
+                <div class="activity-card">
+                    <div class="activity-icon activity-icon-love">💕</div>
+                    <h3>Amor & Socialização</h3>
+                    <p>Essa é a atividade mais poderosa de todas. Brincar, acariciar, conversar e simplesmente estar presente faz uma diferença enorme no comportamento e na autoestima dos animais. Eles sentem — e nunca esquecem.</p>
+                    <span class="activity-tag">O mais importante</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="how-section">
+        <div class="container">
+            <div class="section-header-centered">
+                <span class="section-tag" style="color: var(--secondary);">Passo a Passo</span>
+                <h2 class="section-title">Como funciona o voluntariado</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.75;">O processo é simples, acolhedor e sem burocracia. Em poucos dias você já pode estar aqui, fazendo a diferença ao lado de quem mais precisa.</p>
+            </div>
+
+            <div class="how-steps">
+                <div class="how-step">
+                    <div class="how-step-num">1</div>
+                    <h3>Preencha o Formulário</h3>
+                    <p>Informe seus dados básicos e sua disponibilidade de dias e horários. Levamos menos de 2 minutos para receber sua inscrição.</p>
+                </div>
+                <div class="how-step">
+                    <div class="how-step-num">2</div>
+                    <h3>Receba as Boas-Vindas</h3>
+                    <p>Nossa equipe entrará em contato em até <strong>2 dias úteis</strong> para apresentar o abrigo, tirar dúvidas e combinar sua primeira visita.</p>
+                </div>
+                <div class="how-step">
+                    <div class="how-step-num">3</div>
+                    <h3>Comece a Ajudar!</h3>
+                    <p>Na primeira visita você recebe uma orientação rápida e prática. A partir daí, você já pode participar ativamente das atividades semanais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO DE VOLUNTÁRIO -->
+    <section class="volunteer-form-section" id="formulario-voluntario">
+        <div class="container">
+            <div class="volunteer-form-container">
+
+                <div class="section-header-centered" style="margin-bottom: 2.5rem;">
+                    <span class="section-tag">Inscrição</span>
+                    <h2 class="section-title">Quero ser voluntário</h2>
+                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;">Preencha o formulário abaixo. Nossa equipe analisará seu cadastro e retornará em até <strong>2 dias úteis</strong> com todas as informações para você começar.</p>
+                </div>
+
+                <div class="volunteer-form-card">
+                    <form id="volunteer-form" novalidate>
+
+                        <!-- Nome e E-mail -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="vol-nome">
+                                    Nome completo <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    id="vol-nome"
+                                    name="vol-nome"
+                                    class="form-control"
+                                    placeholder="Seu nome completo"
+                                    autocomplete="name"
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="erro-vol-nome"
+                                >
+                                <span class="field-error" id="erro-vol-nome" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="vol-email">
+                                    E-mail <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <input
+                                    type="email"
+                                    id="vol-email"
+                                    name="vol-email"
+                                    class="form-control"
+                                    placeholder="seu@email.com"
+                                    autocomplete="email"
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="erro-vol-email"
+                                >
+                                <span class="field-error" id="erro-vol-email" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <!-- Telefone -->
+                        <div class="form-row form-row-single">
+                            <div class="form-group">
+                                <label class="form-label" for="vol-telefone">
+                                    Telefone / WhatsApp <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <input
+                                    type="tel"
+                                    id="vol-telefone"
+                                    name="vol-telefone"
+                                    class="form-control"
+                                    placeholder="(11) 98888-7777"
+                                    autocomplete="tel"
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="erro-vol-telefone"
+                                    maxlength="15"
+                                >
+                                <span class="field-error" id="erro-vol-telefone" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <!-- Dias disponíveis -->
+                        <div class="form-group">
+                            <label class="form-label" id="label-dias">
+                                Dias disponíveis <span class="required-mark" aria-hidden="true">*</span>
+                            </label>
+                            <p class="field-hint" style="margin-bottom: 0.5rem;">Selecione todos os dias em que você pode comparecer ao abrigo.</p>
+                            <div class="days-grid" role="group" aria-labelledby="label-dias" aria-describedby="erro-vol-dias">
+                                <label class="day-pill">
+                                    <input type="checkbox" name="vol-dias" value="segunda">
+                                    Segunda
+                                </label>
+                                <label class="day-pill">
+                                    <input type="checkbox" name="vol-dias" value="terca">
+                                    Terça
+                                </label>
+                                <label class="day-pill">
+                                    <input type="checkbox" name="vol-dias" value="quarta">
+                                    Quarta
+                                </label>
+                                <label class="day-pill">
+                                    <input type="checkbox" name="vol-dias" value="quinta">
+                                    Quinta
+                                </label>
+                                <label class="day-pill">
+                                    <input type="checkbox" name="vol-dias" value="sexta">
+                                    Sexta
+                                </label>
+                                <label class="day-pill">
+                                    <input type="checkbox" name="vol-dias" value="sabado">
+                                    Sábado
+                                </label>
+                            </div>
+                            <span class="field-error" id="erro-vol-dias" role="alert"></span>
+                        </div>
+
+                        <!-- Turno preferido -->
+                        <div class="form-row form-row-single">
+                            <div class="form-group">
+                                <label class="form-label" for="vol-turno">
+                                    Turno preferido <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <select
+                                    id="vol-turno"
+                                    name="vol-turno"
+                                    class="form-control"
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="erro-vol-turno"
+                                >
+                                    <option value="" disabled selected>Selecione um turno...</option>
+                                    <option value="manha">Manhã (8h às 12h)</option>
+                                    <option value="tarde">Tarde (13h às 17h)</option>
+                                    <option value="qualquer">Qualquer horário — sou flexível</option>
+                                </select>
+                                <span class="field-error" id="erro-vol-turno" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <!-- Mensagem adicional (opcional) -->
+                        <div class="form-group">
+                            <label class="form-label" for="vol-mensagem">
+                                Mensagem adicional <span style="color: var(--text-muted); font-weight: 400;">(opcional)</span>
+                            </label>
+                            <textarea
+                                id="vol-mensagem"
+                                name="vol-mensagem"
+                                class="form-control form-textarea"
+                                placeholder="Conte um pouco sobre você, suas motivações ou alguma experiência prévia com animais..."
+                                rows="4"
+                            ></textarea>
+                        </div>
+
+                        <!-- Botão de envio -->
+                        <div class="form-nav" style="justify-content: flex-end;">
+                            <button type="submit" class="btn btn-secondary" style="padding: 0.9rem 2.5rem;" aria-label="Enviar inscrição de voluntário">
+                                Enviar Inscrição
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width: 1.1rem; height: 1.1rem; fill: currentColor;">
+                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE SUCESSO -->
+    <div class="success-overlay"
+         id="volunteer-success-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="vol-success-title"
+         aria-describedby="vol-success-desc"
+         style="display:none;">
+        <div class="success-card">
+            <div class="success-icon-wrapper" aria-hidden="true">
+                <svg class="success-checkmark" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            <h2 id="vol-success-title" class="success-title">Inscrição Recebida!</h2>
+            <p id="vol-success-desc" class="success-desc">
+                Que alegria ter você conosco! Nossa equipe analisará sua inscrição e entrará em contato em até <strong>2 dias úteis</strong> para agendar sua primeira visita ao abrigo. Obrigado por querer fazer a diferença! 🐾
+            </p>
+            <div class="success-paw" aria-hidden="true">🤝</div>
+            <div class="success-actions">
+                <a href="index.html" class="btn btn-secondary">Voltar ao Início</a>
+                <a href="animais.html" class="btn btn-outline">Conhecer os Animais</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14c-1.66 0-3-1.34-3-3 0-2 3-6 3-6s3 4 3 6c0 1.66-1.34 3-3 3zm-4.5-3c-1.38 0-2.5-1.12-2.5-2.5 0-1.67 2.5-5 2.5-5s2.5 3.33 2.5 5c0 1.38-1.12 2.5-2.5 2.5zm9 0c-1.38 0-2.5-1.12-2.5-2.5 0-1.67 2.5-5 2.5-5s2.5 3.33 2.5 5c0 1.38-1.12 2.5-2.5 2.5zM4 16.5c0-1.38 1.12-2.5 2.5-2.5.83 0 1.5.67 1.5 1.5 0 1.38-2.5 4.5-2.5 4.5s-1.5-2.12-1.5-3.5zm16 0c0 1.38-1.12 2.5-2.5 2.5-.83 0-1.5-.67-1.5-1.5 0-1.38 2.5-4.5 2.5-4.5s1.5 2.12 1.5 3.5z"/>
+                        </svg>
+                        <span>Patinhas Unidas</span>
+                    </div>
+                    <p class="footer-tagline">Conectando olhares cheios de esperança a famílias cheias de carinho.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">ONG</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#sobre">Quem Somos</a></li>
+                        <li><a href="animais.html">Quero Adotar</a></li>
+                        <li><a href="voluntariado.html">Como Ajudar</a></li>
+                        <li><a href="contato.html">Localização</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Apoie</h4>
+                    <ul class="footer-links">
+                        <li><a href="doacoes.html">Doar Financeiro</a></li>
+                        <li><a href="doacoes.html">Doar Suprimentos</a></li>
+                        <li><a href="voluntariado.html">Seja Voluntário</a></li>
+                        <li><a href="contato.html">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Fale Conosco</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item"><span>📞</span> +55 (11) 98888-7777</div>
+                        <div class="footer-contact-item"><span>✉️</span> contato@patinhasunidas.org.br</div>
+                        <div class="footer-contact-item"><span>📍</span> São Paulo, SP, Brasil</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Patinhas Unidas. Todos os direitos reservados. Projeto Acadêmico.</p>
+                <p>Desenvolvido com ❤️ e responsabilidade.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/voluntariado.js"></script>
+</body>
+</html>
