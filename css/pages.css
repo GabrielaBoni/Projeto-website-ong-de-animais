@@ -275,29 +275,6 @@
     width: 100%;
 }
 
-/* --- Seção de Destaque Animais na Home --- */
-.featured-section {
-    padding: 6rem 0;
-}
-
-.featured-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 3.5rem;
-}
-
-.featured-header-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.featured-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
 
 /* ==========================================================================
    RESPONSIVIDADE DAS PÁGINAS
@@ -338,9 +315,6 @@
         grid-template-columns: 1fr;
     }
 
-    .featured-grid {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 @media (max-width: 768px) {
@@ -357,19 +331,6 @@
         width: 100%;
     }
 
-    .featured-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-    }
-
-    .featured-header .btn {
-        width: 100%;
-    }
 }
 
 /* ==========================================================================
@@ -654,19 +615,6 @@
     transform: scale(1.04);
 }
 
-.animal-placeholder {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.placeholder-icon {
-    font-size: 4.5rem;
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.12));
-    user-select: none;
-}
 
 /* Paleta de gradientes para os placeholders */
 .ph-orange    { background: linear-gradient(135deg, hsl(24, 100%, 90%), hsl(24, 90%, 76%)); }
@@ -701,10 +649,6 @@
     color: #fff;
 }
 
-.status-adotado {
-    background-color: hsl(24, 10%, 50%);
-    color: #fff;
-}
 
 /* Corpo do card */
 .animal-card-body {
@@ -757,19 +701,6 @@
     font-size: 0.88rem;
 }
 
-.btn-adopted {
-    width: 100%;
-    padding: 0.65rem 1rem;
-    font-size: 0.88rem;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    background-color: var(--bg-main);
-    color: var(--text-muted);
-    border: 2px solid var(--border-color);
-    border-radius: var(--radius-full);
-    cursor: not-allowed;
-    margin-top: auto;
-}
 
 /* --- Estado: Nenhum Resultado --- */
 .no-results {
@@ -2388,164 +2319,6 @@ select.form-control {
     padding: 4rem 0 6rem;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 0.85fr 1.15fr;
-    gap: 4rem;
-    align-items: start;
-}
-
-/* --- Coluna de Informações --- */
-.contact-info-column {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* --- Botão WhatsApp --- */
-.whatsapp-cta {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.1rem 1.5rem;
-    background-color: #25D366;
-    color: #fff;
-    border-radius: var(--radius-lg);
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
-    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
-}
-
-.whatsapp-cta:hover {
-    background-color: #1ebe5d;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
-    color: #fff;
-}
-
-.whatsapp-cta > svg:first-child {
-    width: 1.75rem;
-    height: 1.75rem;
-    fill: currentColor;
-    flex-shrink: 0;
-}
-
-.whatsapp-cta-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    flex: 1;
-}
-
-.whatsapp-cta-label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    opacity: 0.85;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.whatsapp-cta-number {
-    font-size: 1.05rem;
-    font-weight: 800;
-}
-
-/* --- Card de Informações --- */
-.contact-info-card {
-    background-color: var(--bg-card);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.contact-info-title {
-    font-size: 1.15rem;
-    font-weight: 700;
-}
-
-.contact-info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-.contact-info-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: var(--radius-md);
-    background-color: var(--primary-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    flex-shrink: 0;
-}
-
-.contact-info-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-}
-
-.contact-info-label {
-    font-family: var(--font-heading);
-    font-size: 0.72rem;
-    font-weight: 700;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.contact-info-value {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--text-main);
-}
-
-.contact-info-value a {
-    color: var(--primary);
-    transition: color var(--transition-fast);
-}
-
-.contact-info-value a:hover { color: var(--primary-hover); }
-
-/* --- Card de Endereço --- */
-.address-map-card {
-    background-color: var(--secondary-light);
-    border: 1px solid hsl(150, 40%, 85%);
-    border-radius: var(--radius-lg);
-    padding: 1.75rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.address-icon { font-size: 1.75rem; line-height: 1; }
-
-.address-map-card h4 {
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: var(--secondary);
-}
-
-.address-map-card p {
-    font-size: 0.92rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-}
-
-/* --- Coluna de Formulário --- */
-.contact-form-column {
-    position: sticky;
-    top: 6rem;
-}
 
 .contact-form-card {
     background-color: var(--bg-card);
@@ -2575,17 +2348,571 @@ select.form-control {
 
 /* --- Responsividade: Contato --- */
 @media (max-width: 992px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
-    .contact-form-column { position: static; }
-
     .contact-hero-title { font-size: 2.4rem; }
 }
 
 @media (max-width: 768px) {
     .contact-hero-title { font-size: 2rem; }
     .contact-form-card { padding: 2rem 1.5rem; }
+}
+
+/* ==========================================================================
+   PÁGINA: DOAÇÕES
+   ========================================================================== */
+
+/* --- Layout centralizado para contato.html --- */
+.contact-form-centered {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- Card de doação financeira (substitui PIX) --- */
+.financial-donation-card {
+    max-width: 760px;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem 3rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.fin-don-icon {
+    font-size: 3rem;
+    line-height: 1;
+    flex-shrink: 0;
+    background-color: var(--primary-light);
+    width: 5rem;
+    height: 5rem;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fin-don-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fin-don-content h3 {
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.fin-don-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    counter-reset: steps;
+}
+
+.fin-don-steps li {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-left: 1.75rem;
+    position: relative;
+    counter-increment: steps;
+}
+
+.fin-don-steps li::before {
+    content: counter(steps);
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 0.68rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fin-don-cta {
+    flex-shrink: 0;
+    align-self: center;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .financial-donation-card {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+    .fin-don-cta { width: 100%; text-align: center; }
+}
+
+/* --- Hero --- */
+.donation-hero {
+    background: linear-gradient(135deg, var(--primary-light) 0%, hsl(30, 60%, 97%) 100%);
+    padding: 5rem 0 4rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.donation-hero-container {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+.donation-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.donation-hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.donation-hero-title span { color: var(--primary); }
+
+.donation-hero-desc {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    max-width: 520px;
+}
+
+.donation-hero-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.don-stat-item {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: 1.1rem 1.4rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.don-stat-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.don-stat-icon { font-size: 1.75rem; line-height: 1; flex-shrink: 0; }
+
+.don-stat-text { display: flex; flex-direction: column; gap: 0.15rem; }
+
+.don-stat-value {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.1;
+}
+
+.don-stat-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* --- Seção Transparência --- */
+.transparency-section {
+    padding: 6rem 0;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.transparency-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.transparency-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.transparency-breakdown {
+    background-color: var(--bg-main);
+    border-radius: var(--radius-lg);
+    padding: 2.25rem;
+    border: 1px solid var(--border-color);
+}
+
+.breakdown-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1.75rem;
+    color: var(--text-main);
+}
+
+.breakdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.breakdown-item { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.breakdown-bar-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breakdown-label {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.breakdown-pct {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--text-muted);
+}
+
+.breakdown-track {
+    height: 8px;
+    background-color: var(--border-color);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.breakdown-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+}
+
+.breakdown-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* --- Seção PIX --- */
+.pix-section {
+    padding: 6rem 0;
+    background-color: var(--bg-main);
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+/* --- Seção Necessidades Físicas --- */
+.needs-section {
+    padding: 6rem 0;
+    background-color: var(--bg-card);
+}
+
+.needs-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+}
+
+.need-card {
+    background-color: var(--bg-main);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.need-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: hsl(24, 90%, 82%);
+}
+
+.need-card-icon {
+    width: 100%;
+    padding: 1.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.need-icon-food     { background-color: var(--primary-light); }
+.need-icon-meds     { background-color: hsl(350, 70%, 93%); }
+.need-icon-blankets { background-color: hsl(210, 60%, 92%); }
+.need-icon-clean    { background-color: var(--secondary-light); }
+.need-icon-vet      { background-color: hsl(45, 95%, 91%); }
+
+.need-card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+.need-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.need-card-body h3 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+.need-urgency {
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    border-radius: var(--radius-full);
+    font-family: var(--font-heading);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: fit-content;
+}
+
+.need-urgency-critical {
+    background-color: hsl(350, 80%, 94%);
+    color: hsl(350, 65%, 48%);
+}
+
+.need-urgency-high {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+.need-urgency-medium {
+    background-color: hsl(210, 60%, 92%);
+    color: hsl(210, 55%, 38%);
+}
+
+.need-urgency-ongoing {
+    background-color: var(--secondary-light);
+    color: var(--secondary);
+}
+
+.need-card-body p {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    line-height: 1.65;
+}
+
+.need-examples {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.need-examples li {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.4rem;
+    line-height: 1.5;
+}
+
+.need-examples li::before {
+    content: '✓';
+    color: var(--secondary);
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    margin-top: 0.05rem;
+}
+
+/* --- Seção Entrega --- */
+.delivery-section {
+    padding: 6rem 0;
+    background-color: var(--secondary-light);
+    border-top: 1px solid hsl(150, 40%, 88%);
+    border-bottom: 1px solid hsl(150, 40%, 88%);
+}
+
+.delivery-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.delivery-steps {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.delivery-step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid hsl(150, 40%, 85%);
+}
+
+.delivery-step:last-child { border-bottom: none; }
+
+.delivery-step-num {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(56, 122, 87, 0.3);
+}
+
+.delivery-step-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-top: 0.4rem;
+}
+
+.delivery-step-info h3 { font-size: 1.1rem; }
+
+.delivery-step-info p {
+    color: var(--text-muted);
+    font-size: 0.93rem;
+    line-height: 1.65;
+}
+
+.delivery-cta {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.delivery-cta-label {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+
+/* --- CTA Final --- */
+.donation-cta-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--primary-light) 0%, hsl(30, 60%, 97%) 100%);
+    border-top: 1px solid var(--border-color);
+}
+
+.donation-cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.donation-cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 580px;
+}
+
+.donation-cta-text h2 { font-size: 2.4rem; font-weight: 800; }
+.donation-cta-text h2 span { color: var(--primary); }
+.donation-cta-text p { color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; }
+
+.donation-cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.donation-cta-actions .btn { min-width: 230px; }
+
+/* --- Responsividade: Doações --- */
+@media (max-width: 1100px) {
+    .needs-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 992px) {
+    .donation-hero-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .donation-hero-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .don-stat-item { flex: 1; min-width: 160px; }
+
+    .transparency-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .donation-cta-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .donation-cta-text { max-width: 100%; }
+
+    .donation-cta-actions .btn {
+        width: 100%;
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .donation-hero-title { font-size: 2.4rem; }
+
+    .donation-hero-stats { flex-direction: column; }
+
+    .needs-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .donation-cta-text h2 { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+    .donation-hero-title { font-size: 2rem; }
+    .needs-grid { grid-template-columns: 1fr; }
 }
