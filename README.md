@@ -1,16 +1,16 @@
-# 🐾 Projeto: Website de ONG de Animais
+#Projeto: Website de ONG de Animais
 
 Bem-vindo ao repositório do projeto **Website de ONG de Animais**! Este projeto tem como objetivo desenvolver uma plataforma web moderna, interativa e altamente estética para uma organização não governamental (ONG) dedicada ao resgate, cuidado e adoção de animais.
 
 ---
 
-## 🌟 Objetivo do Projeto
+##Objetivo do Projeto
 
 Criar um portal web premium que conecte a comunidade aos animais resgatados, facilitando o processo de adoção, arrecadação de doações, engajamento de voluntários e conscientização sobre a causa animal.
 
 ---
 
-## 🚀 Funcionalidades Planejadas
+##Funcionalidades Planejadas
 
 - **Página Inicial (Home):** Apresentação da ONG, destaques de animais para adoção e histórias de sucesso emocionantes.
 - **Painel de Adoção:** Catálogo interativo com filtros por espécie, porte, idade e temperamento.
@@ -20,7 +20,7 @@ Criar um portal web premium que conecte a comunidade aos animais resgatados, fac
 
 ---
 
-## 🛠️ Tecnologias a serem Utilizadas
+##Tecnologias a serem Utilizadas
 
 - **Estrutura:** HTML5 Semântico
 - **Estilização:** CSS3 Vanilla (com design moderno, gradientes suaves, animações e responsividade total)
@@ -28,7 +28,7 @@ Criar um portal web premium que conecte a comunidade aos animais resgatados, fac
 
 ---
 
-## ⚙️ Estrutura de Arquivos Inicial
+##Estrutura de Arquivos Inicial
 
 ```text
 Trabalho Faculdade/
@@ -43,10 +43,10 @@ Trabalho Faculdade/
 
 ---
 
-## 📈 Integração com o Git
+##Integração com o Git
 
 Este repositório está integrado com o repositório remoto oficial da ONG no GitHub:
-👉 [Projeto-website-ong-de-animais](https://github.com/GabrielaBoni/Projeto-website-ong-de-animais.git)
+[Projeto-website-ong-de-animais](https://github.com/GabrielaBoni/Projeto-website-ong-de-animais.git)
 
 ### Comandos Úteis
 
